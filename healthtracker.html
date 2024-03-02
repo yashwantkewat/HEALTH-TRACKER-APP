@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-image: url('./image/mobile.jpg');
+            height: 100vh;
+            color: white;
+        }
+
+        .top-nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            text-align: center;
+            height: 5vh;
+            background-color: #fff;
+        }
+
+        li > button{
+            background-color:white;
+            color: blue;
+            font-weight: 500;
+            font-size: 23px;
+            width: 300px;
+            border: #78de12;
+        }
+
+        li>button:hover{
+            background-color: blue;
+        }
+
+        ul>li{
+            list-style: none;
+        }
+        li>a{
+            text-decoration: none;
+            font-size: 30px;
+        }
+        a:hover{
+            background-color: yellow;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+        }
+
+       
+        .main-nav {
+            text-align: center;
+            margin-top: 8.2rem;
+        }
+
+        .main-nav h2,
+        .main-nav h1 {
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        h2{
+            display: inline-block;
+        }
+
+        h1{
+            width: 380px;
+            margin-left: 550px;
+        }
+
+        
+        .main-nav h1:hover,.main-nav h2:hover {
+             background-color: yellow;
+             border-radius: 10px;
+             text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+
+        .main-nav button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        button>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover{
+            cursor: pointer;
+            font-weight: 700;
+            color: #78de12;
+            box-shadow: 10px 10px 5px lightblue inset;
+
+        }
+
+         .foot {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .app {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .app h1 {
+            margin-bottom: 20px;
+        }
+
+        .inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: rgba(116, 144, 216, 0.376);
+
+        }
+
+        .inputs div {
+            flex-basis: calc(33.33% - 20px);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        input:focus-visible {
+            outline: 2px solid #ec4899;
+        }
+
+        button {
+            background-image: linear-gradient(to right, #ec4899, #8b5cf6);
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.02);
+        }
+
+        .hidden{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            float:right;
+            height: 100px;
+            width: 90px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #0a0a0a;
+            color: white;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #57534e;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #262626;
+        }
+
+        tr:hover {
+            background-color: #737373;
+            color: black;
+        }
+
+        .delete-animation {
+            animation: deleteAnimate 0.4s linear forwards;
+        }
+
+        @keyframes deleteAnimate {
+            to {
+                transform: translateX(100%);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="top-nav">
+            <ul>
+                <li><a href="">MYAPPTHEME</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Live Demo Blocks</a></li>
+                <li><a href="#">Live Demo</a></li>
+                <li><button>BUY NOW</button></li>
+            </ul>
+        </div>
+        <div class="main-nav">
+            <h2>It is created to watch</h2>
+            <h1>Health Tracker App</h1>
+            <button>Email Address</button>
+            <button><a href="https://mobirise.com/extensions/appamp/healthtracker.html">GET NOW</a></button>
+        </div>
+    </div>
+
+    <div class="foot">
+        <span>100+ <span style="color: #974545;">Health Program</span></span>
+        <span>50+ <span style="color: #863b3b;">Individual Parameter</span></span>
+        <span>2500+ <span style="color: #896868;">Active Users</span></span>
+        <span>50x <span style="color: #836868;">Training Efficiency</span></span>
+    </div>
+
+    <div class="app">
+        <!-- <h1>Your Daily Routine</h1>
+        <h1>Health Tracker App</h1> -->
+        <div class="inputs">
+            <div>
+                <label for="water">Water Intake (in ml)</label>
+                <input type="number" id="water">
+            </div>
+            <div>
+                <label for="exercise">Exercise Duration (in min)</label>
+                <input type="number" id="exercise">
+            </div>
+            <div>
+                <label for="bloodsugarlevel">Blood Sugar Level (in mg/dl)</label>
+                <input type="number" id="bloodsugarlevel">
+            </div>
+        </div>
+ 
+        <div class="hidden" id="editsection">
+            <button id="submit">Submit</button>
+            <button id="canceledit" onclick="cancelEdit()">Cancel</button>
+            <button id="updateentry" onclick="editRow()">Update</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Water Intake (in ml)</th>
+                    <th>Exercise Duration (in min)</th>
+                    <th>Blood Sugar Level (in mg/dl)</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="output"></tbody>
+        </table>
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+
+</html>
